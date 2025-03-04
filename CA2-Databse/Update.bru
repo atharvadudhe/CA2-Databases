@@ -1,0 +1,26 @@
+meta {
+  name: Update
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8000/api/user/update/67c67e0afa302e96ba1e7ed
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name":"John",
+    "date": "2025-03-04",
+    "duration": 1,
+    "caloriesBurned": 70,
+    "exercises":{
+      "name": "cardio",
+      "reps": 1,
+      "sets": 1,
+      "weight": 0
+    }
+  }
+}

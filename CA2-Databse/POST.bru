@@ -1,0 +1,26 @@
+meta {
+  name: POST
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8000/api/user/post
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name":"John",
+    "date": "2025-03-04",
+    "duration": 2,
+    "caloriesBurned": 50,
+    "exercises":{
+      "name": "pullups",
+      "reps": 3,
+      "sets": 10,
+      "weight": 5
+    }
+  }
+}
